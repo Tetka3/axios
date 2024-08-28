@@ -4,11 +4,14 @@
 }
 .navbar{
     display: flex;
-    height: 50px;
-    color: red;
+    height: 50px;    
 }
 .navbar ul li{
     display: inline-block;
-    padding: 5px;
-
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+.navbar ul li:hover{
+    background-color: green;
 }
