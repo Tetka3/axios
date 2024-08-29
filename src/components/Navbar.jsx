@@ -1,13 +1,14 @@
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <ul>
-        <li>Home</li>
-        <li>Blogs</li>
-        <li>Comments</li>
-        <li>About</li>
+        <Link to="/"><li>Home</li></Link>
+        <Link to="/"><li>Blogs</li></Link>
+        <Link to="/"><li>Comments</li></Link>
+        <Link to="/"><li>About</li></Link>
       </ul>
     </div>
   )
