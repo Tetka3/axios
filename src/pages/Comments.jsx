@@ -6,15 +6,9 @@ const Comments = () => {
 
   const [comments, setComments] = useState([]);
 
-  // const fetchComments = asyn() => {
-  //   const getComment = await axios.get("https://jsonplaceholder.typicode.com/comments");
-  //   console.log(getComment);
-  // };
-
   const fetchComments = async() => {
     const getComment = await axios.get("https://jsonplaceholder.typicode.com/comments");
     setComments(getComment.data)
-    console.log(getComment)
   }
 
   useEffect(() => {
@@ -25,7 +19,7 @@ const Comments = () => {
       <Navbar/>
       <div className='comments'>
         {
-          comments.map((comment) => <div>comment.name</div>)
+          comments.map((comment) => <div>{comment.name}</div>)
         }
       </div> 
     </>
