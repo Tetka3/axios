@@ -5,7 +5,11 @@ const Comments = () => {
   return (
     <div>
       <Navbar/>
-      comments 
+      <div>
+        {
+          
+        }
+      </div> 
     </div>
   )
 }
