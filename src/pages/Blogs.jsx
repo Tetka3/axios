@@ -8,7 +8,7 @@ const Blogs = () => {
 
   const fetchPosts = async () => {
     const getPosts = await axios.get("https://jsonplaceholder.typicode.com/posts") 
-    console.log(getPosts)
+   setPosts(getPosts.data)
   }
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const Blogs = () => {
     <div>
       <Navbar/>
       {
-        posts.map(post => <li>{}</li>)
+        posts.map((post,key) => <li key={post.id}>{post.body}</li>)
       }
     </div>
   )
