@@ -12,8 +12,8 @@ const Blogs = () => {
   }
 
   useEffect(() => {
-
-  })
+    fetchPosts();
+  },[])
 
   return (
     <div>
