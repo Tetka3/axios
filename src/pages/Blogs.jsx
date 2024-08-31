@@ -7,7 +7,7 @@ const Blogs = () => {
   const [posts, setPosts] = useState([]);
 
   const fetchPosts = () => {
-    
+
   }
 
   useEffect(() => {
@@ -17,7 +17,9 @@ const Blogs = () => {
   return (
     <div>
       <Navbar/>
-      blogs
+      {
+        posts.map(post => <li>{}</li>)
+      }
     </div>
   )
 }
