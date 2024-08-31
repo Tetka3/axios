@@ -6,8 +6,9 @@ const Blogs = () => {
 
   const [posts, setPosts] = useState([]);
 
-  const fetchPosts = () => {
-
+  const fetchPosts = async () => {
+    const getPosts = await axios.get("https://jsonplaceholder.typicode.com/posts") 
+    console.log(getPosts)
   }
 
   useEffect(() => {
