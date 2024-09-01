@@ -4,4 +4,10 @@
 }
 .blogs, .comments{
     padding-left: 30px;
+    padding-right: 30px;
+}
+.single-comment{
+    /* background-color: gray; */
+    gap: 10px;
+    margin-top: 10px;
 }

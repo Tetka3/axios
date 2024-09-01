@@ -20,7 +20,7 @@ const Comments = () => {
       <Navbar/>
       <div className='comments'>
         {
-          comments.map((comment, key) => <div key={comment.id}>{comment.name}</div>)
+          comments.map((comment, key) => <div key={comment.id} className='single-comment'>{comment.name}</div>)
         }
       </div> 
     </>
