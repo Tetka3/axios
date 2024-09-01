@@ -16,12 +16,14 @@ const Blogs = () => {
   },[])
 
   return (
-    <div>
+    <>
       <Navbar/>
-      {
-        posts.map((post,key) => <li key={post.id}>{post.body}</li>)
-      }
-    </div>
+      <div className='blogs'>
+        {
+          posts.map((post, key) => <li key={post.id}>{post.body}</li>)
+        }
+      </div>
+    </>
   )
 }
 
